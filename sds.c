@@ -22,7 +22,7 @@ sds sdsnewlen(const void *init, size_t initlen) {
     struct sdshdr *sh;
 
     if (init) {
-        sh = zmalloc(sizeof(struct sdshdr)+initlen+1);
+        sh = zmalloc(sizeof(struct sdshdr)+initlen+1);//+1的目的是为了存储“\0”
     } else {
         sh = zcalloc(sizeof(struct sdshdr)+initlen+1);
     }
