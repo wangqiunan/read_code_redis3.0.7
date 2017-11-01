@@ -33,7 +33,7 @@ static inline size_t sdsavail(const sds s) {
 }
 /*
 struct sdshdr *sh = (void*)(s-(sizeof(struct sdshdr)));
-这一句一直让我有点困惑。
+这一句一直让我有点困惑。  
 */
 sds sdsnewlen(const void *init, size_t initlen);
 sds sdsnew(const char *init);
