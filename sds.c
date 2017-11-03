@@ -34,7 +34,7 @@ sds sdsnewlen(const void *init, size_t initlen) {
     sh->buf[initlen] = '\0';
     return (char*)sh->buf;
 }
-  
+
 /* Create an empty (zero length) sds string. Even in this case the string
  * always has an implicit null term. */
 sds sdsempty(void) {
